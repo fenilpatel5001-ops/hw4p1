@@ -1,0 +1,50 @@
+<!-- 
+File: index.html
+Fenil Patel
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4 Part 1 – Dynamic Multiplication Table</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <form id="multForm" novalidate>
+        <table id="form_table">
+            <tr>
+              <td><label for="minCol">Minimum Column Value:</label></td>
+              <td><input type="number" id="minCol" name="minCol" value="1"></td>
+            </tr>
+            <tr>
+              <td><label for="maxCol">Maximum Column Value:</label></td>
+              <td><input type="number" id="maxCol" name="maxCol" value="5"></td>
+            </tr>
+            <tr>
+              <td><label for="minRow">Minimum Row Value:</label></td>
+              <td><input type="number" id="minRow" name="minRow" value="1"></td>
+            </tr>
+            <tr>
+                <td><label for="maxRow">Maximum Row Value:</label></td>
+                <td><input type="number" id="maxRow" name="maxRow" value="5"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Generate Table</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="table"></div>
+
+</body>
+</html>

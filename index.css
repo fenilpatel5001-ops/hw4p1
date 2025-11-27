@@ -1,0 +1,82 @@
+/* 
+File: index.css
+Fenil Patel
+*/
+#form_table {
+    text-align: right;
+}
+
+td {
+    padding: 3px;
+}
+
+input[type='number']{
+    width: 40px;
+}
+
+#table {
+    margin-top: 20px;
+    width: 280px;
+    height: 280px;
+    overflow: auto;
+}
+
+#table table {
+    border-collapse: collapse;
+    text-align: right;
+}
+  
+#table th, #table td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#table table tr:nth-child(n+2) td:nth-child(n+2):nth-child(even) {
+    background-color: #a39b9b;
+}
+
+#table th, #table td:nth-of-type(1) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(212, 40, 40);
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
+
+#table th {
+    z-index: 2;
+    border-bottom-color: black;
+    border-top: none;
+    border-bottom: none;
+}
+
+#table th:last-child {
+    border-right-color: black;
+}
+
+#table td:nth-of-type(1) {
+    z-index: 1;
+    border-right-color: black;
+}
+  
+#table td {
+    background-color: white;
+    color: black;
+}
+
+p {
+    color: red;
+}
+
+input.error {
+    border: 2px solid red;
+    background-color: #ffecec;
+}
+
+label.error {
+    color: red;
+    font-size: 0.85em;
+    margin-left: 8px;
+}
